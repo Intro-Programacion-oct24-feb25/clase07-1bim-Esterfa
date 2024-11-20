@@ -24,7 +24,7 @@ public class Ejemplo02 {
         limite = entrada.nextInt(); 
         while (contador <= limite){
             
-            if (contador%2!=0) {
+            if (contador%2!=0) { //El condicional es para ver si el contaodor es menor o igusl que el limite 
                 System.out.printf("Contador %d\n", 
                     contador);
             }
