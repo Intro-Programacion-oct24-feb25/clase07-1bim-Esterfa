@@ -25,12 +25,12 @@ public class Ejemplo06 {
 
         double suma_total = 0;
         double calificacion;
-        boolean bandera = true;
+        boolean bandera = true;  // Pyton: True  //  Folse
 
         System.out.println("Ingrese las notas de los "
                 + "estudiantes de su materia");
         // true 
-        // while (bandera) {
+        // while (bandera) {  // line 33 y 34 son exactamente lo mismo
         while(bandera==true){
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
