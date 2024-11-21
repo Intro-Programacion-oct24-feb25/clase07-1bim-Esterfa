@@ -34,6 +34,12 @@ public class Ejemplo101 {
         while (contador <= limite_tabla){
             operacion = tabla * contador;
             
+            if(limite_tabla<=0){
+                
+               }else{
+                
+                }
+            
             cadena = String.format("%s%d*%d=%d\n", 
                     cadena, 
                     tabla, 
