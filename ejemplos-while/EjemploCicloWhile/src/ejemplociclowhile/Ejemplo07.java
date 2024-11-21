@@ -35,7 +35,7 @@ public class Ejemplo07 {
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
             suma_total = suma_total + calificacion;
-            contador = contador + 1;
+            contador = contador + 1;  // se usa fuera del ciclo para sacar el promedio de la suma
             // proceso para salir del ciclo.
             System.out.println("Ingrese el valor de -1 para salir del ciclo");
             int temporal = entrada.nextInt();
