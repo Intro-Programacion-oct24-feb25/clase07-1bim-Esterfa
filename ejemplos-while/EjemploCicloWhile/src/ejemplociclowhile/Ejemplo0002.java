@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo08 {
+public class Ejemplo0002 {
 
     /**
      * @param args the command line arguments
@@ -39,10 +39,15 @@ public class Ejemplo08 {
             entrada.nextLine(); // Ojo usamos el limpiador del scanner (buffer), entrada.nextLine se usa para limpiar
 
             // proceso para salir del ciclo.
-            System.out.println("Ingrese si para salir");
+            System.out.println("Ingrese si / yes / s /  para salir");
             String temporal = entrada.nextLine();
-            if (temporal.equals("si")) { 
-                bandera = false;
+            switch (temporal) {
+                case "si":
+                case "yes":
+                case "s":
+                case "y":
+                     bandera = false;
+                     break;
             }
         }
         promedio_final = suma_total / contador;

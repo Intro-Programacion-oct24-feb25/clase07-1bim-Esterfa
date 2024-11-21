@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo08 {
+public class Ejemplo081 {
 
     /**
      * @param args the command line arguments
@@ -39,9 +39,11 @@ public class Ejemplo08 {
             entrada.nextLine(); // Ojo usamos el limpiador del scanner (buffer), entrada.nextLine se usa para limpiar
 
             // proceso para salir del ciclo.
-            System.out.println("Ingrese si para salir");
+            System.out.println("Ingrese si / yes / s /  para salir");
             String temporal = entrada.nextLine();
-            if (temporal.equals("si")) { 
+            if (temporal.equals("si") || temporal.equals("yes") 
+                 || temporal.equals("s")
+                 || temporal.equals("y")) {  // si ponemos &&  es una condicion que nunca se va a cumplir pero con el or si es posible 
                 bandera = false;
             }
         }
